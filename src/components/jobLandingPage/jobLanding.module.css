@@ -1,0 +1,90 @@
+.root {
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+}
+.shareContainer,
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.fl_grow_4 {
+  flex-grow: 5;
+  width: 10rem;
+}
+.fl_grow_2 {
+  flex-grow: 2;
+  width: 3rem;
+}
+.title_font {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.secon_title_font {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.scroll {
+
+  height: 30rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+
+}
+
+.border_container {
+  border: 1px solid grey;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+
+.elemnt_value {
+  padding: 1rem;
+}
+.justifyContantShare {
+  justify-content: space-between;
+}
+
+.alighnIcon {
+  align-items: center;
+}
+.drawer_container {
+  background: white;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  margin: 2rem;
+  cursor: pointer;
+}
+.drawer_container:hover {
+  border-color: rgb(93, 130, 211);
+}
+.titleDrawer {
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .root {
+    flex-direction: column;
+
+  }
+  .fl_grow_4,
+  .fl_grow_2 {
+    width: inherit;
+  }
+  .border_container {
+    margin: auto 0.5rem;
+  }
+  
+  .justifyContantShare {
+    flex-direction: column;
+    align-items: start;
+  }
+}
